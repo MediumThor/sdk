@@ -1,14 +1,14 @@
 {
-  "name": "@pangolindex/sdk",
+  "name": "@arcanumdex/sdk",
   "license": "MIT",
-  "version": "4.4.0-rc.1",
+  "version": "1.0.0",
   "description": "🛠 An SDK for building applications on top of Pangolin.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pangolindex/sdk",
+  "repository": "https://github.com/MediumThor/sdk",
   "keywords": [
     "pangolin",
     "avalanche"
