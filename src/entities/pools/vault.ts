@@ -29,8 +29,8 @@ export class Vault extends Pool {
       chainId,
       Vault.getAddress(tokenAmounts.map(tokenAmount => tokenAmount.token)),
       18,
-      'PGL',
-      'Pangolin Liquidity'
+      'ARL',
+      'Arcanum Liquidity'
     )
 
     super(chainId, liquidityToken, tokenAmounts)

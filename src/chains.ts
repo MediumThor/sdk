@@ -342,44 +342,42 @@ export const AVALANCHE_FUJI: Chain = {
   chain_id: 43113,
   name: 'Avalanche Fuji',
   symbol: 'AVAX',
-  png_symbol: 'fujiPNG',
+  png_symbol: 'ARC',
   mainnet: false,
   evm: true,
   logo: 'https://raw.githubusercontent.com/pangolindex/sdk/master/src/images/chains/avax.png',
   pangolin_is_live: true,
   tracked_by_debank: false,
-  supported_by_gelato: true,
+  supported_by_gelato: false,
   rpc_uri: 'https://api.avax-test.network/ext/bc/C/rpc',
   contracts: {
-    png: '0xAF5D473b3f8F96A5B21c6bbB97e09b491335acb9',
-    factory: '0x2a496ec9e9bE22e66C61d4Eb9d316beaEE31A77b',
-    router: '0x688d21b0B8Dc35971AF58cFF1F7Bf65639937860',
+    png: '0x85C9192a1088ce572D50E62F6e662Bcd345184C9',
+    factory: '0x538af53faE7895D1c74c10C4Cc52b72F980e1da9',
+    router: '0x458b63e266161f4a986Db215C479acf9740e346A',
     router_daas: '0xFE97f59B72eEE0F29F93e12195C6F35DCdAB6899',
     wrapped_native_token: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
-    timelock: '0xf4C589029be33cc4e4056B125794B35A2dF23136',
+    timelock: "0x084B18a2a63853b246C730c7A9f9B760c705053f",
     mini_chef: {
-      address: '0x2572ECa2be804f7799e3f3Ef1D1db60F512a0Ae3',
+      address: '0x4b757aE26cBB877f619003398Ecc438d57A9D49E',
       active: true,
       type: ChefType.MINI_CHEF_V2
     },
-    community_treasury: '0x3a6e244678f392638876A92DAAa3C56e02dC1080',
+    community_treasury: '0x44584Cb9AB64ebBE29A1d8f71e973A89e35E75E3',
     airdrop: {
-      address: '0x630CC51306B1E2cf149B7F7a15F78bCD006A5D65',
-      active: false,
+      address: '0x473442C4d8708F8f5e9a31612098C5b5Bed6D71D',
+      active: true,
       type: AirdropType.LEGACY
     },
-    treasury_vester: '0xee82a2695c1ae2cCFC3DDDa643836Ff5E55Fa1e1',
-    revenue_distributor: '0xF3861Acb8061A70499DC85c4a6aA9E934C83049f',
-    fee_collector: '0x0609ce4F16388c440BF9a84b5E8df1b0438F714A',
+    treasury_vester: "0xD3935c7FbE0A1Aa21CFc2d2D2051B564A5Faa31f",
+    revenue_distributor: "0x5d22eD2D5c11fd5A85d7C2Ae92EE011063b918E8",
+    fee_collector: "0xe73fa0A2653d1118EbFD095De4c8776A54944732",
     multicall: '0xb465Fd2d9C71d5D6e6c069aaC9b4E21c69aAA78f',
-    staking: [
-      {
-        address: '0x5610E572c9f2a10BFd15861061F8B1Fe75e05b23',
-        active: true,
-        reward_token: '0xAF5D473b3f8F96A5B21c6bbB97e09b491335acb9',
-        type: StakingType.LEGACY
-      }
-    ]
+    staking: [{
+      address: "0xa5B1C3a38a667a2ed90B18c92ED5375273247582",
+      active: true,
+      reward_token: "0x85C9192a1088ce572D50E62F6e662Bcd345184C9",
+      type: StakingType.LEGACY
+    }]
   },
   nativeCurrency: {
     name: 'Avalanche',

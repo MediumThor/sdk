@@ -30,10 +30,10 @@ export class Pair extends Pool {
     // but for non-evm we don't have that method, so for now we are going to concatenate both token addresses
     return !!CHAINS[chainId]?.evm
       ? getCreate2Address(
-          FACTORY_ADDRESS[chainId],
-          keccak256(['bytes'], [pack(['address', 'address'], [tokens[0].address, tokens[1].address])]),
-          INIT_CODE_HASH_MAPPING[chainId]
-        )
+        FACTORY_ADDRESS[chainId],
+        keccak256(['bytes'], [pack(['address', 'address'], [tokens[0].address, tokens[1].address])]),
+        INIT_CODE_HASH_MAPPING[chainId]
+      )
       : `${tokens[0].address}-${tokens[1].address}`
   }
 
@@ -55,8 +55,8 @@ export class Pair extends Pool {
       chainId,
       Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token, chainId),
       decimals,
-      'PGL',
-      'Pangolin Liquidity'
+      'ARL',
+      'Arcanum Liquidity'
     )
 
     super(chainId, liquidityToken, tokenAmounts)
