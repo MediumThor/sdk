@@ -18,7 +18,7 @@ yarn build
 Yarn is available to install [here](https://classic.yarnpkg.com/en/docs/install/#debian-stable) if you need it.
 
 ## Installation
-This project is available as an npm package. Add to your project with `npm install @arcanumdex/sdk`
+This project is available as an npm package. Add to your project with `npm install @_arcanumdex/sdk`
 
 # development flow
 
