@@ -81,6 +81,43 @@ export const WAVAX: { [chainId in ChainId]: Token } = {
     18,
     'WAVAX',
     'Wrapped AVAX'
-  )
+  ),
+  [ChainId.WAGMI]: new Token(
+    ChainId.WAGMI,
+    CHAINS[ChainId.WAGMI].contracts!.wrapped_native_token,
+    18,
+    'wWAGMI',
+    'Wrapped WAGMI'
+  ),
+  [ChainId.COSTON]: new Token(
+    ChainId.COSTON,
+    CHAINS[ChainId.COSTON].contracts!.wrapped_native_token,
+    18,
+    'WCFLR',
+    'Wrapped CostonFlare'
+  ),
+  [ChainId.SONGBIRD]: new Token(
+    ChainId.SONGBIRD,
+    CHAINS[ChainId.SONGBIRD].contracts!.wrapped_native_token,
+    18,
+    'wWSGB',
+    'Wrapped Songbird'
+  ),
+
+  [ChainId.NEAR_MAINNET]: new Token(
+    ChainId.NEAR_MAINNET,
+    CHAINS[ChainId.NEAR_MAINNET].contracts!.wrapped_native_token,
+    24,
+    'wNEAR',
+    'Wrapped NEAR'
+  ),
+  [ChainId.NEAR_TESTNET]: new Token(
+    ChainId.NEAR_TESTNET,
+    CHAINS[ChainId.NEAR_TESTNET].contracts!.wrapped_native_token,
+    24,
+    'wNEAR',
+    'Wrapped NEAR'
+  ),
+  [ChainId.BSC]: new Token(ChainId.BSC, ZERO_ADDRESS, 18, '', ''),
 
 }
